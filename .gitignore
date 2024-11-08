@@ -1,0 +1,37 @@
+# Django
+*.log
+*.pyc
+__pycache__/
+migrations/
+
+# Node
+node_modules/
+package-lock.json
+
+# Virtualenv
+*.egg-info/
+dist/
+build/
+
+# Otros
+.idea/
+.vscode/
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración
+.env
+secrets.json
+
+# Archivos de compilación
+*.sassc
+*.scssc
+*.css.map
+
+# Archivos de testing
+coverage/
+.tox/

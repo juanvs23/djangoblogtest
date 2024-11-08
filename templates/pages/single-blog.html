@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+    
+        {% include "partials/blog-hero.html"%}
+        <section class="post-metadata container p-2">
+            <div class="card bg-secondary  p-2 text-white">
+                <div class="card-body">
+                    <div class="row">
+                       
+                        <div class="col-md-6">
+                            <p>{{ pageData.author.first_name }} {{ pageData.author.last_name }}</p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{ pageData.author.email }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row py-5 display-10">
+                {{ pageData.content|safe }}
+            </div>
+        </section>
+  
+{% endblock content %}

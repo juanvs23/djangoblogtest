@@ -1,0 +1,10 @@
+<div class="card col-md-3 col-lg-4 text-bg-dark p-0">
+    <a href="/blog/archive/{{ post.slug }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{post.image}}" class="card-img" alt="{{ post.title }}">
+      <div class="card-img-overlay " style="background-color: rgba(0, 0, 0, 0.5);">
+        <h5 class="card-title text-white ">{{ post.title }}</h5>
+        <p class="card-text">{{post.content|striptags|slice:':50'}}...</p>
+        <p class="card-text"><small>{{ post.created_at|date:"F d, Y" }}</small></p>
+      </div>
+    </a>
+  </div>

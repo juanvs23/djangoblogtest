@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="blog-content">
+        {% include "partials/hero.html"%}
+        <section class="py-10">
+            <div class="container">
+                <div class="row justify-content-center align-items-center gap-2">
+
+                    {% for post in posts %}
+                        {% include "partials/blog-post.html" %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock content %}

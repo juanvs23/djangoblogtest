@@ -1,0 +1,28 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+    <head>
+        {% include "partials/head.html" %}
+        {% block styles %}{% endblock  %}
+    </head>
+
+    <body class="presentation-page">
+    <!-- Navbar -->
+    {% include "partials/navbar.html" %}
+    <!-- End Navbar -->
+
+   <main>
+    {% block content %}{% endblock %}
+   </main>
+   <aside>
+       {% block aside %}{% endblock %}
+   </aside>
+   
+    {% include "partials/footer.html" %}
+    {% include "partials/scripts.html" %}
+    {% block scripts %}{% endblock %}
+    </body>
+
+</html>
